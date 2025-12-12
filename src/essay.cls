@@ -72,5 +72,5 @@
 }
 
 % Bibliography style
-\bibliographystyle{IEEEtran}                  % IEEE style with better DOI/URL support		
+\bibliographystyle{alphaurl}                  % style with better DOI/URL support		
 \newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}
