@@ -47,11 +47,22 @@ Your content here...
 
 3. Compile your document:
 
+**Option 1: Using make (recommended)**
+```bash
+make all
+```
+
+**Option 2: Manual compilation**
 ```bash
 pdflatex essay.tex
 bibtex essay
 pdflatex essay.tex
 pdflatex essay.tex
+```
+
+To clean up auxiliary files:
+```bash
+make clean
 ```
 
 ### Example
@@ -63,6 +74,7 @@ See `essay.tex` for a complete example document demonstrating all features of th
 - **essay.cls** - The LaTeX class file containing all formatting rules
 - **essay.tex** - Example document demonstrating the template
 - **references.bib** - Example bibliography file
+- **Makefile** - Build automation for easy compilation
 
 ## Requirements
 
