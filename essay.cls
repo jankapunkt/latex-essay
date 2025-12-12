@@ -4,16 +4,27 @@
 % Base class: article with A4 paper, two-sided, 11pt font
 \LoadClass[a4paper,twoside,11pt]{article}
 
+% geometry, spacing, lengths
+\RequirePackage{geometry}  % Page margins
+\setlength{\textwidth}{420pt}
+\setlength{\headheight}{35pt}
+\setlength{\oddsidemargin}{16pt}
+\setlength{\evensidemargin}{16pt}
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+
 % Required packages
-\RequirePackage[left=1cm,right=1cm,top=2cm,bottom=2cm,headheight=14pt]{geometry}  % Page margins
 \RequirePackage{setspace}                    % Line spacing
 \RequirePackage{fancyhdr}                    % Headers and footers
+\RequirePackage{graphicx}                    % figures ad images etc.
 \RequirePackage{xcolor}                      % Colors
 \RequirePackage{hyperref}                    % Hyperlinks
 \RequirePackage{titlesec}                    % Section formatting
+\RequirePackage{mathptmx}                    % font¸
 
 % Define dark blue color
-\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{darkblue}{HTML}{000044}
+\definecolor{blue}{HTML}{000099}
 
 % Set line spacing to 1.15
 \setstretch{1.15}
@@ -21,10 +32,10 @@
 % Configure hyperlinks with dark blue color
 \hypersetup{
     colorlinks=true,
-    linkcolor=darkblue,
-    urlcolor=darkblue,
-    citecolor=darkblue,
-    filecolor=darkblue
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    filecolor=blue
 }
 
 % Format section headings in dark blue
@@ -61,4 +72,5 @@
 }
 
 % Bibliography style
-\bibliographystyle{ieeetr}
+\bibliographystyle{ieeetr}                    % change to your preferred style		
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{doi: #1}}
