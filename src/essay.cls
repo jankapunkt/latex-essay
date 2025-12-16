@@ -5,7 +5,7 @@
 \LoadClass[a4paper,twoside,11pt]{article}
 
 % geometry, spacing, lengths
-\RequirePackage{geometry}  % Page margins
+\RequirePackage{geometry}                    % Page margins
 \setlength{\textwidth}{420pt}
 \setlength{\headheight}{35pt}
 \setlength{\oddsidemargin}{16pt}
@@ -23,8 +23,7 @@
 \RequirePackage{mathptmx}                    % font¸
 
 % Define dark blue color
-\definecolor{darkblue}{HTML}{000044}
-\definecolor{blue}{HTML}{000099}
+\definecolor{darkblue}{HTML}{1b2d48}
 
 % Set line spacing to 1.15
 \setstretch{1.15}
@@ -32,21 +31,21 @@
 % Configure hyperlinks with dark blue color
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    urlcolor=blue,
-    citecolor=blue,
-    filecolor=blue
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+    citecolor=darkblue,
+    filecolor=darkblue
 }
 
-% Format section headings in dark blue
+% Format section headings in dark blue and sans font
 \titleformat{\section}
-    {\normalfont\Large\bfseries\color{darkblue}}
+    {\sffamily\Large\bfseries\color{darkblue}}
     {\thesection}{1em}{}
 \titleformat{\subsection}
-    {\normalfont\large\bfseries\color{darkblue}}
+    {\sffamily\large\bfseries\color{darkblue}}
     {\thesubsection}{1em}{}
 \titleformat{\subsubsection}
-    {\normalfont\normalsize\bfseries\color{darkblue}}
+    {\sffamily\normalsize\bfseries\color{darkblue}}
     {\thesubsubsection}{1em}{}
 
 % Configure page style with header and footer
